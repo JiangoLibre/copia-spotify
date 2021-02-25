@@ -29,7 +29,7 @@ body {
 .btn-primary:hover {
     background: #1ed760;
     cursor: pointer;
-    transition: all 300ms ease ;
+     ;
 }
 
 .logo {
@@ -38,6 +38,9 @@ body {
     
 }
 
+.logo:hover{
+    cursor: pointer;    
+}
 
 /*NAVBAR*/ 
 
@@ -149,7 +152,7 @@ body {
    }
 
    #footer .footer-content .footer-menu .footer-menu-item:hover {
-    background-color: #1DB954;
+    color: #1DB954;
     cursor:pointer;
    }
        
@@ -166,12 +169,19 @@ body {
 
    .socials {
        display: flex;
+       flex-wrap: nowrap;
 
    }
 
-   .socials i {
-       margin: 0 20px;
-       font-size: 1.7rem;
+   .classe-icon {
+    margin: 0 20px;
+    font-size: 1.7rem;
+    transition: all 300ms ease;
+   }
+
+   .classe-icon:hover {
+    color: #1DB954;
+    cursor:pointer;
    }
 
    /*FOOTER INFO*/
@@ -195,8 +205,8 @@ body {
        
        
    }
-   .footer-info .footer-info-itens li:hover {
-    background-color: #1DB954;
+   .footer-info .footer-info-itens :hover {
+    color: #1DB954;
     cursor:pointer;
    }
 
@@ -214,8 +224,12 @@ body {
        justify-content: flex-end;
        align-items: center ;
        margin-bottom: 10px;
-        
-
+       transition: all 300ms ease;
+    
+   }
+   .footer-info .rights .country p:hover{
+       cursor: pointer;
+       color: #1DB954;
    }
 
    .footer-info .rights .country .brazil-flag {
